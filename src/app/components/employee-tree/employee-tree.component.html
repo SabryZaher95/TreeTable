@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="text-center">Our Employees</h1>
+  <div class="btn-container">
+    <button class="btn" (click)="expandAll()">Expand All</button>
+    <button class="btn" (click)="collapseAll()">Collapse All</button>
+  </div>
+  <ul>
+    <ng-container *ngFor="let employee of employees">
+      <app-employee-node [employee]="employee"></app-employee-node>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,19 @@
+li{
+  list-style: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.icon{
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+i{
+  background-color: #ddd;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+}
+

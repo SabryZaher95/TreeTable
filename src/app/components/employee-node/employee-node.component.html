@@ -1,0 +1,11 @@
+<li>
+  <span (click)="toggleChildren()" [class]="employee.children?.length ?? 0 > 0 ? 'visible' : 'hidden'" class="icon">
+    <i [ngClass]="showChildren ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-right'"></i>
+  </span>
+  {{ employee.name }}
+  <ul *ngIf="showChildren && employee.children?.length ?? 0 > 0">
+    <ng-container *ngFor="let child of employee.children">
+      <app-employee-node [employee]="child"></app-employee-node>
+    </ng-container>
+  </ul>
+</li>

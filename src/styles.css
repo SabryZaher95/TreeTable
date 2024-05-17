@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --main-color: #09c;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  background-color: #ccc;
+  border: 2px solid var(--main-color)
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.text-center{
+  text-align: center;
+}
+
